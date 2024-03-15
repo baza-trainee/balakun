@@ -1,4 +1,4 @@
-import { About } from "./[lang]/components/About";
+import About from "./[lang]/components/About/About";
 import { Achivements } from "./[lang]/components/Achivements";
 import { Community } from "./[lang]/components/Community";
 import { Experience } from "./[lang]/components/Experience";
@@ -26,4 +26,4 @@ export default function Home() {
       <Footer />
     </>
   );
-};
+}
