@@ -1,5 +1,5 @@
 import { About } from "./[lang]/components/About";
-import { Achivements } from "./[lang]/components/Achivements";
+import { Achievements } from "./[lang]/components/Achievements";
 import { Community } from "./[lang]/components/Community";
 import { Experience } from "./[lang]/components/Experience";
 import { Footer } from "./[lang]/components/Footer";
@@ -16,7 +16,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
-      <Achivements />
+      <Achievements />
       <Team />
       <Location />
       <YouTube />
