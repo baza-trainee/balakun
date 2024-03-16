@@ -1,4 +1,3 @@
-
 import { About } from "./components/About";
 import { Achivements } from "./components/Achivements";
 import { Community } from "./components/Community";
