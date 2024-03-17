@@ -1,8 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import AboutImg from "../../../../public/about-img.jpg";
-import { ptsans } from "../../fonts/fonts";
-import AboutUsItem from "./AboutUsItem";
+import AboutImg from "@/public/about-img.jpg";
+import { ptsans } from "@/fonts";
+import AboutUsItem from "@/components/About/AboutUsItem";
 
 export default function About() {
   return (

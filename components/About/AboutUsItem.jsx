@@ -1,5 +1,5 @@
 import React from "react";
-import { ptsans } from "../../fonts/fonts";
+import { ptsans } from "@/fonts";
 
 export default function AboutUsItem({ number, title, description }) {
   return (
