@@ -1,6 +1,6 @@
-import "./fonts/fonts";
+import "./fonts/index";
 import "./globals.css";
-import { roboto } from "./fonts/fonts";
+import { roboto } from "./fonts/index";
 
 
 import i18nConfig from "@/i18nConfig";
