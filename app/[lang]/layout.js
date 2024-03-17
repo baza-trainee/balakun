@@ -1,5 +1,7 @@
 import "./fonts/fonts";
-import { roboto } from "./globals.css";
+import { roboto } from "./fonts/fonts";
+//import { roboto } from "./globals.css";
+import "./globals.css";
 
 export const metadata = {
   title: "Balakun",
