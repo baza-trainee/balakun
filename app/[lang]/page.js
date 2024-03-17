@@ -1,4 +1,4 @@
-import { About } from "./components/About";
+import About from "./components/About/About";
 import { Achivements } from "./components/Achivements";
 import { Community } from "./components/Community";
 import { Experience } from "./components/Experience";
@@ -9,7 +9,6 @@ import { Location } from "./components/Location";
 import { Questions } from "./components/Questions";
 import { Team } from "./components/Team";
 import { YouTube } from "./components/YouTube";
-
 
 export default function Home() {
   return (
@@ -29,4 +28,4 @@ export default function Home() {
       <Footer />
     </>
   );
-};
+}
