@@ -1,9 +1,10 @@
 import "./fonts/index";
 import "./globals.css";
-import { roboto } from "./fonts/index";
-
-
+import { roboto } from '@/fonts';
+import { dir } from 'i18next';
 import i18nConfig from "@/i18nConfig";
+
+const languages = ['en', 'ua'];
 
 export const metadata = {
   title: "Balakun",
@@ -15,11 +16,22 @@ export function generateStaticParams() {
   return i18nConfig.locales.map(locale => ({ locale }));
 }
 
-
-export default function RootLayout({ children,params: { lang } }) {
-  return (
-    <html lang={lang}>
-      <body className={roboto.className}>{children}</body>
-    </html>
-  );
+export default function RootLayout({ children, params: { lng } }) {
+	return (
+		<html lang='en' dir={dir(lng)}>
+			<body className={roboto.className}>
+				<main className='mx-auto max-w-[1920px]'>{children}</main>
+			</body>
+		</html>
+	);
 }
+
+
+
+
+
+
+
+
+
+
