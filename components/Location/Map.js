@@ -9,7 +9,7 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 
 const Map = () => {
 	return (
-		<section className='b-32 mx-[210px]'>
+		<section className='mb-32 mx-[210px]'>
 			<h3 className='mb-16 text-4xl font-bold text-center'>
 				Mentor&apos;s <span className='text-red-900'>Map</span>
 			</h3>
