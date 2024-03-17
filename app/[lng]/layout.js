@@ -1,10 +1,12 @@
-import "./fonts/index";
+import "@/fonts";
 import "./globals.css";
-import { roboto } from "./globals.css";
+import { roboto } from '@/fonts';
 import { dir } from 'i18next';
 import i18nConfig from "@/i18nConfig";
 
-const languages = ['en', 'ua'];
+
+/* I18nConfig have the same*/
+//const languages = ['en', 'ua'];
 
 export const metadata = {
   title: "Balakun",
@@ -18,7 +20,7 @@ export function generateStaticParams() {
 
 export default function RootLayout({ children, params: { lng } }) {
 	return (
-		<html lang='en' dir={dir(lng)}>
+		<html lang={lng} dir={dir(lng)}>
 			<body className={roboto.className}>
 				<main className='mx-auto max-w-[1920px]'>{children}</main>
 			</body>
