@@ -15,13 +15,13 @@ const Map = () => {
 			</h3>
 			<MapContainer
 				center={[51.505, -0.09]}
-				zoom={2}
+				zoom={6}
 				scrollWheelZoom={false}
-				className='w-full h-[400px]'
+				className='w-full h-[660px]'
 			>
 				<TileLayer
-					attribution='&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-					url='https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png'
+					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+					url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
 				/>
 				<Marker
 					icon={
