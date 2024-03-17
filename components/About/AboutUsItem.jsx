@@ -12,8 +12,12 @@ export default function AboutUsItem({ number, title, description }) {
         </div>
       </div>
       <div>
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <h3
+          className={`${ptsans.className} mb-2 text-[21px] leading-[1.2] text-[#000000]`}
+        >
+          {title}
+        </h3>
+        <p className="text-base leading-[1.4] text-[#4F4F4F]">{description}</p>
       </div>
     </div>
   );
