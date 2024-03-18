@@ -6,3 +6,4 @@ const DynamicMap = dynamic(() => import('./Map'), {
 });
 
 export const Location = () => <DynamicMap />;
+
