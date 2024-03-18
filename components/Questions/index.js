@@ -3,7 +3,7 @@ import Image from "next/image";
 import question from "@/public/question.jpg";
 
 import Question from "./Question";
-import { ptsans } from "../../fonts/fonts";
+import { ptsans } from "@/fonts";
 
 export const Questions = () => {
 
