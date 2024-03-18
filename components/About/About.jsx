@@ -4,7 +4,7 @@ import AboutImg from "@/public/about-img.jpg";
 import { ptsans } from "@/fonts";
 import AboutUsItem from "@/components/About/AboutUsItem";
 
-export const About = () => {
+export const AboutUs = () => {
   return (
     <section className="mb-[66px] px-[210px] py-16 flex flex-row items-center gap-16">
       <Image
