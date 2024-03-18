@@ -21,12 +21,26 @@ export function generateStaticParams() {
 export default function RootLayout({ children, params: { lng } }) {
 	return (
 		<html lang={lng} dir={dir(lng)}>
-			<body className={roboto.className}>
-				<main className='mx-auto max-w-[1920px]'>{children}</main>
-			</body>
-		</html>
-	);
+      <body className={roboto.className}>
+        <main className='mx-auto max-w-[1920px]'>{children}</main>
+      </body>
+    </html>
+  );
 }
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
 
 
 
