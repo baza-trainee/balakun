@@ -7,7 +7,7 @@ import UserRoleBtn from "@/components/Buttons/UseRoleBtn.jsx";
 import HeroImg from "@/public/hero-img.jpg";
 import { ptsans } from "@/fonts";
 
-export const Hero = () => {
+export const HeroPart = () => {
   const handleMentorClick = () => {
     console.log("Go to Mentor registration");
   };
