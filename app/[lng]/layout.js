@@ -22,7 +22,7 @@ export function generateStaticParams() {
 
 import initTranslations from '../i18n';
 import TranslationsProvider from '@/components/Internationalization/TranslationsProvider';
-const i18nNamespaces = ['translation'];
+const i18nNamespaces = ['translation', 'header', 'footer'];
 
 export default async function RootLayout({ children, params: { lng } }) {
   const { t, resources } = await initTranslations(lng, i18nNamespaces);
@@ -30,9 +30,9 @@ export default async function RootLayout({ children, params: { lng } }) {
     <html lang="en" dir={dir(lng)}>
       <body className={roboto.className}>
         <TranslationsProvider namespaces={i18nNamespaces} locale={lng} resources={resources}>
-          <Header />
+          <Header lng={lng} />
           <main className="mx-auto max-w-[1920px]">{children}</main>
-          <Footer />
+          <Footer lng={lng} />
         </TranslationsProvider>
       </body>
     </html>

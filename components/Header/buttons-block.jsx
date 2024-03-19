@@ -1,16 +1,15 @@
-'use client'
 import MyButtonLink from '@/components/ui/mu-button-link';
-import { useTranslation } from 'react-i18next';
+import initTranslations from '@/app/i18n';
 
-const ButtonsBlock = () => {
-    const { t } = useTranslation();
+const ButtonsBlock = async ({ lng }) => {
+  const { t } = await initTranslations(lng, ['header']);
   return (
     <>
       <MyButtonLink styleType="secondary" styleWidth="small" href="#">
-      {t('header.sign-in')}
+        {t('header.sign-in')}
       </MyButtonLink>
       <MyButtonLink styleType="primary" styleWidth="small" href="#">
-      {t('header.donate')}
+        {t('header.donate')}
       </MyButtonLink>
     </>
   );

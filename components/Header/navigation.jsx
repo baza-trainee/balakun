@@ -1,9 +1,8 @@
-'use client';
 import Link from 'next/link';
-import { useTranslation } from 'react-i18next';
+import initTranslations from '@/app/i18n';
 
-const Navigation = () => {
-  const { t } = useTranslation();
+const Navigation = async ({lng}) => {
+  const { t } = await initTranslations(lng, ['header']);
   return (
     <nav className="flex gap-8 font-medium">
       <Link href="/students">{t('header.nav-students')}</Link>

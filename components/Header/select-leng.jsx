@@ -26,9 +26,7 @@ const SelectLeng = () => {
   const [showLangList, setShowLangList] = useState(false);
 
   const handleChangeLocale = value => {
-    console.log(`new locale ${value}`);
     const newLocale = value;
-
     // set cookie for next-i18n-router
     const days = 30;
     const date = new Date();
@@ -59,7 +57,6 @@ const SelectLeng = () => {
       <button
         className="flex items-center gap-2"
         onClick={() => {
-          console.log('click lang');
           setShowLangList(!showLangList);
         }}
       >

@@ -1,0 +1,15 @@
+{
+  "footer": {
+    "nav-about-us": "About Us",
+    "nav-students": "For Students",
+    "nav-mentors": "For Mentors",
+    "sign-up-text": "Sign up to our newsletter",
+    "sign-up": "Sign Up",
+    "email-error": "Email is invalid",
+    "all-rights-reserved": "All Rights Reserved",
+    "made-with-love": "Made with Love",
+    "privacy-policy": "Privacy Policy",
+    "terms-of-use": "Terms of Use",
+    "cookies-settings": "Cookies Settings"
+  }
+}

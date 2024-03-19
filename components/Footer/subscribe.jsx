@@ -1,8 +1,10 @@
 'use client';
 import { useState } from 'react';
-import MyButton from '../ui/my-button';
+import MyButton from '@/components/ui/my-button';
+import { useTranslation } from 'react-i18next';
 
 const Subscribe = () => {
+  const { t } = useTranslation('footer');
   const [email, setEmail] = useState('');
   const [isValid, setIsValid] = useState(false);
 
@@ -25,7 +27,7 @@ const Subscribe = () => {
   return (
     <form className="relative w-[400px]">
       <label htmlFor="email" className="mb-2 font-semibold">
-        Sign up to our newsletter
+      {t('footer.sign-up-text')}
       </label>
 
       <input
@@ -37,11 +39,11 @@ const Subscribe = () => {
         placeholder="example@gmail.com"
         onChange={handleInputChange}
       />
-      {!isValid && email.length > 0 && <p className="absolute text-sm text-red-500">Email is invalid</p>}
+      {!isValid && email.length > 0 && <p className="absolute text-sm text-red-900">{t('footer.email-error')}</p>}
 
       <div className="absolute right-0 bottom-0 w-auto">
         <MyButton styleType="primary" styleWidth="small" onClick={onSubmit} disabled={!isValid || email.length === 0}>
-          Sign Up
+        {t('footer.sign-up')}
         </MyButton>
       </div>
     </form>

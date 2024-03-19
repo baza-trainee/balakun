@@ -2,24 +2,21 @@ import Link from 'next/link';
 import Logo from '@/components/ui/logo';
 import Subscribe from './subscribe';
 import IconLinks from './icon-links';
-import { footerNavLinks } from '@/data';
 import { MdMail } from 'react-icons/md';
 import { inter } from '@/fonts';
+import initTranslations from '@/app/i18n';
 
-const Footer = () => {
+const Footer = async ({ lng }) => {
+  const { t } = await initTranslations(lng, ['footer']);
   return (
     <footer className="border-t border-black-100">
       <div className="max-w-[1900px] mx-auto py-8 px-[210px] ">
         <div className="flex items-center justify-between py-3">
-          <Logo type='footer' />
+          <Logo type="footer" />
           <div className={`${inter.className} flex gap-8 leading-[140%]`}>
-            {footerNavLinks.map(link => {
-              return (
-                <Link key={link.title} href={link.path}>
-                  {link.title}
-                </Link>
-              );
-            })}
+            <Link href="/about-us">{t('footer.nav-about-us')}</Link>
+            <Link href="/about-us">{t('footer.nav-students')}</Link>
+            <Link href="/about-us">{t('footer.nav-mentors')}</Link>
           </div>
           <Subscribe />
         </div>
@@ -34,15 +31,15 @@ const Footer = () => {
         <div className="flex items-center justify-between text-xs text-black-700 leading-[120%]">
           <div>
             <span>Baza Trainee Ukraine © 2024</span>
-            <span className="px-4 border-r border-l  border-black-100 mx-4">All Rights Reserved</span>
-            <span>Made with Love</span>
+            <span className="px-4 border-r border-l  border-black-100 mx-4">{t('footer.all-rights-reserved')}</span>
+            <span>{t('footer.made-with-love')}</span>
           </div>
           <div>
-            <Link href="#">Privacy Policy</Link>
+            <Link href="#">{t('footer.privacy-policy')}</Link>
             <Link href="#" className="px-4 border-r border-l  border-black-100 mx-4">
-              Terms of Use
+              {t('footer.terms-of-use')}
             </Link>
-            <Link href="#">Cookies Settings</Link>
+            <Link href="#">{t('footer.cookies-settings')}</Link>
           </div>
         </div>
       </div>
