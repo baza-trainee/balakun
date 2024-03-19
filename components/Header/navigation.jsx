@@ -1,25 +1,14 @@
 'use client';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-
-const navLinks = [
-  { title: 'For Students', path: '/students' },
-  { title: 'For Mentors', path: '/mentors' },
-  { title: 'Dashbourd', path: '/dashbourd' },
-];
+import { useTranslation } from 'react-i18next';
 
 const Navigation = () => {
-  const pathName = usePathname();
+  const { t } = useTranslation();
   return (
     <nav className="flex gap-8 font-medium">
-      {navLinks.map(link => {
-        const isActive = pathName === link.path;
-        return (
-          <Link key={link.title} href={link.path} className={isActive ? 'text-red-600' : ''}>
-            {link.title}
-          </Link>
-        );
-      })}
+      <Link href="/students">{t('header.nav-students')}</Link>
+      <Link href="/mentors">{t('header.nav-mentors')}</Link>
+      <Link href="/dashbourd">{t('header.nav-dashbourd')}</Link>
     </nav>
   );
 };

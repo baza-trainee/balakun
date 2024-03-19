@@ -1,11 +1,14 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-
+import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
+import { useTranslation } from 'react-i18next';
+import i18nConfig from '@/i18nConfig';
 const langList = [
   {
-    title: 'UA',
-    value: 'ua',
+    title: 'UK',
+    value: 'uk',
     img: '/icons/ua.svg',
   },
   {
@@ -16,15 +19,33 @@ const langList = [
 ];
 
 const SelectLeng = () => {
-    //тимчасова змінна для локалі
-  const currentLocale = 'en';
+  const { i18n } = useTranslation();
+  const currentLocale = i18n.language;
+  const router = useRouter();
+  const currentPathname = usePathname();
   const [showLangList, setShowLangList] = useState(false);
 
   const handleChangeLocale = value => {
+    console.log(`new locale ${value}`);
     const newLocale = value;
-    console.log(newLocale);
-    setShowLangList(false);
+
+    // set cookie for next-i18n-router
+    const days = 30;
+    const date = new Date();
+    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+    const expires = date.toUTCString();
+    document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
+
+    // redirect to the new locale path
+    if (currentLocale === i18nConfig.defaultLocale && !i18nConfig.prefixDefault) {
+      router.push('/' + newLocale + currentPathname);
+    } else {
+      router.push(currentPathname.replace(`/${currentLocale}`, `/${newLocale}`));
+    }
+
+    router.refresh();
   };
+
   //визначаємо дані для виведення поточної мови
   const currentLang = langList.find(lang => lang.value === currentLocale);
   //rorate для іконки
@@ -78,51 +99,3 @@ const SelectLeng = () => {
   );
 };
 export default SelectLeng;
-
-/*
-'use client';
-
-import { useRouter } from 'next/navigation';
-import { usePathname } from 'next/navigation';
-import { useTranslation } from 'react-i18next';
-import i18nConfig from '@/i18nConfig';
-
-export default function LanguageChanger() {
-  const { i18n } = useTranslation();
-  const currentLocale = i18n.language;
-  const router = useRouter();
-  const currentPathname = usePathname();
-
-  const handleChange = e => {
-    const newLocale = e.target.value;
-
-    // set cookie for next-i18n-router
-    const days = 30;
-    const date = new Date();
-    date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
-    const expires = date.toUTCString();
-    document.cookie = `NEXT_LOCALE=${newLocale};expires=${expires};path=/`;
-
-    // redirect to the new locale path
-    if (
-      currentLocale === i18nConfig.defaultLocale &&
-      !i18nConfig.prefixDefault
-    ) {
-      router.push('/' + newLocale + currentPathname);
-    } else {
-      router.push(
-        currentPathname.replace(`/${currentLocale}`, `/${newLocale}`)
-      );
-    }
-
-    router.refresh();
-  };
-
-  return (
-    <select onChange={handleChange} value={currentLocale}>
-      <option value="en">English</option>
-      <option value="ua">Українська</option>
-    </select>
-  );
-}
-*/
