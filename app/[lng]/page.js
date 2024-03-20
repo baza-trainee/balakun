@@ -1,30 +1,32 @@
-import { About } from "@/components/About";
-import { Achivements } from "@/components/Achivements";
-import { Community } from "@/components/Community";
-import { Experience } from "@/components/Experience";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { Location } from "@/components/Location";
-import { Questions } from "@/components/Questions";
-import { Team } from "@/components/Team";
-import { YouTube } from "@/components/YouTube";
+import { About } from '@/components/About';
+import { Achivements } from '@/components/Achivements';
+import { Community } from '@/components/Community';
+import { Experience } from '@/components/Experience';
+import { Hero } from '@/components/Hero';
+import { Location } from '@/components/Location';
+import { Questions } from '@/components/Questions';
+import { Team } from '@/components/Team';
+import { YouTube } from '@/components/YouTube';
 
+/*This element is example, It can switch language*/
+//import LanguageChanger from "@/components/Internationalization/LanguageChanger";
+//import ExampleClient from "@/components/Internationalization/ExampleClient";
 
-export default function Home() {
+//file's name, you can add other files in other components
+const i18nNamespaces = ['translation'];
+
+export default async function Home({ params: { lng } }) {
   return (
     <>
-      <Header />
-        <Hero />
-        <About />
-        <Achivements />
-        <Team />
-        <Location />
-        <YouTube />
-        <Experience />
-        <Questions />
-        <Community />
-      <Footer />
+      <Hero />
+      <About />
+      <Achivements />
+      <Team />
+      <Location />
+      <YouTube />
+      <Experience />
+      <Questions />
+      <Community />
     </>
   );
-};
+}

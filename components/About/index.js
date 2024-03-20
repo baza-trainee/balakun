@@ -1,7 +1,5 @@
+import { AboutUs } from './About';
+
 export const About = () => {
-    return (
-        <>
-            <h3>About</h3>
-        </>
-    )
-}
+  return <AboutUs />;
+};

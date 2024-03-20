@@ -1,70 +1,68 @@
-import Image from "next/image";
+import Image from 'next/image';
 
-import question from "@/public/question.jpg";
+import question from '@/public/question.jpg';
 
-import Question from "./Question";
-import { ptsans } from "@/fonts";
+import Question from './Question';
+import { ptsans } from '@/fonts';
 
 export const Questions = () => {
-
   const content = [
     {
-      title: "What is Balakun?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      title: 'What is Balakun?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
-      title: "Who can join Balakun as amentor?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      title: 'Who can join Balakun as amentor?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
-      title: "Is Balakun a non-profit org?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      title: 'Is Balakun a non-profit org?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
-      title: "Where is Balakun`s HQ?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      title: 'Where is Balakun`s HQ?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
-      title: "Why volunteer at Balakun?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      title: 'Why volunteer at Balakun?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
-      title: "How can I become a mentor?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      title: 'How can I become a mentor?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
-      title: "How can I become a student?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      title: 'How can I become a student?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
-      title: "How can I know about the status of my application?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      title: 'How can I know about the status of my application?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
-      title: "How can I contact Balakun?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      title: 'How can I contact Balakun?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
-      title: "I want to become a Balakun partner. Whom can I contact?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      title: 'I want to become a Balakun partner. Whom can I contact?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
       title: "I can't be a mentor, but I wish to support. What can I do?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
+    },
+    {
+      title: 'I am already a mentor and I have a question and/or idea about the teaching materials. Who can I contact?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
+    },
+    {
+      title: 'How do I start a group lesson?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
     {
       title:
-        "I am already a mentor and I have a question and/or idea about the teaching materials. Who can I contact?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
-    },
-    {
-      title: "How do I start a group lesson?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
-    },
-    {
-      title:
-        "My availability to provide lessons has changed and I need another mentor to take over. Who can I contact?",
-      text: "  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.",
+        'My availability to provide lessons has changed and I need another mentor to take over. Who can I contact?',
+      text: '  Balakun is a bridge between passionate volunteer mentors from around the world and Ukrainians eager to learn or practice English. Our name «Balakun» is Ukrainian for «Chatterbox,» representing the essence of our initiative – to foster meaningful conversations and build connections.',
     },
   ];
 
@@ -93,4 +91,4 @@ export const Questions = () => {
       </article>
     </div>
   );
-}
+};
