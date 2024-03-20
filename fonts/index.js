@@ -7,10 +7,12 @@ export const roboto = Roboto({
 
 export const ptsans = PT_Sans({
     subsets: ["latin"],
-    weight: ["700"]
+    weight: ["700"],
+    variable:'--font-ptsans',
 })
 
 export const inter = Inter({
-    subsets: ["latin"]
+    subsets: ["latin"],
+    variable:'--font-inter',
 })
 
