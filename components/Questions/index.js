@@ -68,7 +68,7 @@ export const Questions = () => {
 
   return (
     <div className="flex w-full justify-center">
-      <article className="max-w-[1500px]">
+      <article className="max-w-[1500px] mb-[194px]">
         <h1 className={`${ptsans.variable} pb-8 font-ptsans text-left fo text-4xl font-bold tracking-normal`}>
           Frequently Asked <span className="text-red-600">Questions</span>
         </h1>
