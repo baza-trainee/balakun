@@ -1,0 +1,15 @@
+{
+  "footer": {
+    "nav-about-us": "Про нас",
+    "nav-students": "Студентам",
+    "nav-mentors": "Викладачам",
+    "sign-up-text": "Підпишіться на нашу розсилку",
+    "sign-up": "Підписатися",
+    "email-error": "Електронна адреса недійсна",
+    "all-rights-reserved": "Всі права захищені",
+    "made-with-love": "Зроблено з любов'ю",
+    "privacy-policy": "Політика конфіденційності",
+    "terms-of-use": "Умови використання",
+    "cookies-settings": "Налаштування файлів cookie"
+  }
+}
