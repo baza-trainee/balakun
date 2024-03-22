@@ -7,7 +7,6 @@ import { Location } from '@/components/Location';
 import { Questions } from '@/components/Questions';
 import { Team } from '@/components/Team';
 import { YouTube } from '@/components/YouTube';
-
 /*This element is example, It can switch language*/
 //import LanguageChanger from "@/components/Internationalization/LanguageChanger";
 //import ExampleClient from "@/components/Internationalization/ExampleClient";
