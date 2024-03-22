@@ -12,12 +12,12 @@ export default function Error({ error, reset }) {
 
   return (
     <div className="flex flex-col items-center">
-      <h1 className={`${ptsans.className} text-red-900 text-8xl font-bold pb-2 `}>404</h1>
-      <p className={`${ptsans.className} max-w-80 text-black-1000 text-xl text-center font-bold pb-8`}>
+      <h1 className={`${ptsans.className} pb-2 text-8xl font-bold text-red-900 `}>404</h1>
+      <p className={`${ptsans.className} text-black-1000 max-w-80 pb-8 text-center text-xl font-bold`}>
         Sorry, the page you are looking for has been moved or deleted.
       </p>
       <button
-        className="pt-3 pb-3 pl-8 pr-8 text-red-100 bg-red-900 hover:bg-red-700 active:bg-red-950 rounded-full text-base font-semibold"
+        className="rounded-full bg-red-900 pb-3 pl-8 pr-8 pt-3 text-base font-semibold text-red-100 hover:bg-red-700 active:bg-red-950"
         onClick={
           // Attempt to recover by trying to re-render the segment
           () => reset()
