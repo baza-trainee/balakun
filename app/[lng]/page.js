@@ -1,5 +1,5 @@
 import { About } from '@/components/About';
-import { Achivements } from '@/components/Achivements';
+import { Achievements } from '@/components/Achivements';
 import { Community } from '@/components/Community';
 import { Experience } from '@/components/Experience';
 import { Hero } from '@/components/Hero';
@@ -20,7 +20,7 @@ export default async function Home({ params: { lng } }) {
     <>
       <Hero />
       <About />
-      <Achivements />
+      <Achievements />
       <Team />
       <Location />
       <YouTube />
