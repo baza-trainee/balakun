@@ -14,11 +14,11 @@ export const Achievements = () => {
   }, []);
 
   return (
-    <section className={`${ptsans.className} p-16 mb-130 `}>
+    <section className={`${ptsans.className} p-16 mb-130`}>
       <div className='mx-auto max-w-[1500px] text-center'>
         <div className='mb-[64px]'>
           <h2 className="achievement-title text-[36px] ">
-            Balakun's <span className='text-red-900'>Achievements</span>
+            Balakun&apos;s <span className='text-red-900'>Achievements</span>
             
           </h2>
         </div>
