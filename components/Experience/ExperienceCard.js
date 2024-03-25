@@ -1,17 +1,9 @@
-import { ptsans } from "@/fonts";
+import { ptsans } from '@/fonts';
 
-export default function ExperienceCard({
-  title,
-  description,
-  name,
-  country,
-  position,
-}) {
+export default function ExperienceCard({ title, description, name, country, position }) {
   return (
-    <div className="p-6 rounded-[48px] border border-red-900 max-w-[489px] min-h-[400px] flex flex-col gap-2">
-      <h4 className={`${ptsans.className} font-bold text-xl leading-[120%]`}>
-        {title}
-      </h4>
+    <div className="p-6 rounded-[48px] border border-red-900 w-full xl:max-w-[489px] min-h-[400px] flex flex-col gap-2">
+      <h4 className={`${ptsans.className} font-bold text-xl leading-[120%]`}>{title}</h4>
       <p className="flex-1 text-black-700 leading-[140%]">{description}</p>
       <div>
         <p className="mt-2 font-semibold">{name}</p>

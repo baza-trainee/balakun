@@ -12,7 +12,7 @@ import cardData from './data.js';
 
 export const Experience = () => {
   return (
-    <section className="mb-[66px]">
+    <section className="mb-[66px] px-4 xl:px-[70px]">
       <h1 className={`${ptsans.className} text-4xl font-bold text-center`}>
         Voice of<span className="text-red-900"> Experience</span>
       </h1>
@@ -21,7 +21,15 @@ export const Experience = () => {
           modules={[Navigation]}
           loop={true}
           spaceBetween={16}
-          slidesPerView={3}
+          slidesPerView={1}
+          breakpoints={{
+            1024: {
+              slidesPerView: 2,
+            },
+            1280: {
+              slidesPerView: 3,
+            },
+          }}
           navigation={{
             nextEl: '.s-button-next',
             prevEl: '.s-button-prev',
@@ -41,10 +49,10 @@ export const Experience = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-        <div className="absolute duration-200 rotate-180 -translate-y-1/2 s-button-next -left-16 top-2/4 active:-translate-y-5">
+        <div className="absolute z-10 duration-200 rotate-180 -translate-y-1/2 s-button-next xl:-left-16 left-4 top-2/4 active:-translate-y-5">
           <SwiperBtn />
         </div>
-        <div className="absolute duration-200 -translate-y-1/2 s-button-prev -right-14 top-2/4 active:-translate-y-5">
+        <div className="absolute z-10 duration-200 -translate-y-1/2 s-button-prev xl:-right-16 right-4 top-2/4 active:-translate-y-5">
           <SwiperBtn />
         </div>
       </div>
