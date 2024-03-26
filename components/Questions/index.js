@@ -68,17 +68,22 @@ export const Questions = () => {
 
   return (
     <div className="flex w-full justify-center">
-      <article className="max-w-[1500px] mb-[194px]">
-        <h1 className={`${ptsans.className} pb-8 text-left text-4xl font-bold tracking-normal`}>
+      <article className="max-w-[1500px] mb-16">
+        <h1 className={`${ptsans.className} hidden pb-8 text-left text-4xl font-bold tracking-normal lg:inline-block`}>
           Frequently Asked <span className="text-red-600">Questions</span>
         </h1>
-        <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2 xl:gap-16">
-          <div className=" flex flex-col gap-3 rounded-[48px] border border-red-500 p-4 md:gap-6 md:p-8">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-16">
+          <h1
+            className={`${ptsans.className} inline-block max-w-80 md:max-w-full order-1 pb-0 lg:pb-8 text-center text-4xl font-bold tracking-normal lg:hidden`}
+          >
+            Frequently Asked <span className="text-red-600">Questions</span>
+          </h1>
+          <div className="flex flex-col gap-3 rounded-[48px] border border-red-500 p-4 md:gap-6 md:p-8">
             {content.map((item, index) => {
               return <Question item={item} key={index} />;
             })}
           </div>
-          <div className="hidden h-[564px] lg:block">
+          <div className="h-[360px] lg:h-[564px] order-2 shrink-0 w-full lg:max-w-96 xl:max-w-[718px]">
             <Image
               width={926}
               height={520}
