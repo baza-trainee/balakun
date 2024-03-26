@@ -23,17 +23,16 @@ const Subscribe = () => {
       setEmail('');
     }
   };
-
   return (
-    <form className="relative w-[400px]">
+    <form className="relative w-full md:w-[400px]">
       <label htmlFor="email" className="mb-2 font-semibold">
-      {t('footer.sign-up-text')}
+        {t('footer.sign-up-text')}
       </label>
 
       <input
         type="text"
         id="email"
-        className="h-12 mt-2 rounded-[1000px]  flex-1 appearance-none border border-black-100 w-full pl-6 pr-32  placeholder-gray-400 shadow-sm text-base focus:outline-none focus:border-black-400"
+        className="h-12 mt-2 rounded-[1000px] outline-none flex-1 appearance-none border border-black-100 w-full pl-6 pr-32  placeholder-gray-400 shadow-sm text-base focus:outline-none focus:border-black-400"
         name="email"
         value={email}
         placeholder="example@gmail.com"
@@ -41,9 +40,9 @@ const Subscribe = () => {
       />
       {!isValid && email.length > 0 && <p className="absolute text-sm text-red-900">{t('footer.email-error')}</p>}
 
-      <div className="absolute right-0 bottom-0 w-auto">
+      <div className="z-10 absolute right-0 bottom-0 w-auto">
         <MyButton styleType="primary" styleWidth="small" onClick={onSubmit} disabled={!isValid || email.length === 0}>
-        {t('footer.sign-up')}
+          {t('footer.sign-up')}
         </MyButton>
       </div>
     </form>
