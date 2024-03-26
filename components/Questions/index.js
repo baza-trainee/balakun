@@ -74,7 +74,7 @@ export const Questions = () => {
         </h1>
         <div className="flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-16">
           <h1
-            className={`${ptsans.className} inline-block max-w-80 md:max-w-full order-1 pb-0 lg:pb-8 text-center text-4xl font-bold tracking-normal lg:hidden`}
+            className={`${ptsans.className} inline-block max-w-80 md:max-w-full order-1 pb-0 lg:pb-8 text-center text-[32px] md:text-4xl font-bold tracking-normal lg:hidden`}
           >
             Frequently Asked <span className="text-red-600">Questions</span>
           </h1>
