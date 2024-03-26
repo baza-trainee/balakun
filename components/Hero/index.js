@@ -1,7 +1,5 @@
-import { HeroPart } from "./Hero"
+import { HeroPart } from './Hero';
 
 export const Hero = () => {
-    return (
-        <HeroPart />
-    )
-}
+  return <HeroPart />;
+};

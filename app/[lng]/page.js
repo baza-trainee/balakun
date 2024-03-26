@@ -1,5 +1,5 @@
 import { About } from '@/components/About';
-import { Achivements } from '@/components/Achivements';
+import { Achievements } from '@/components/Achivements';
 import { Community } from '@/components/Community';
 import { Experience } from '@/components/Experience';
 import { Hero } from '@/components/Hero';
@@ -7,7 +7,6 @@ import { Location } from '@/components/Location';
 import { Questions } from '@/components/Questions';
 import { Team } from '@/components/Team';
 import { YouTube } from '@/components/YouTube';
-
 /*This element is example, It can switch language*/
 //import LanguageChanger from "@/components/Internationalization/LanguageChanger";
 //import ExampleClient from "@/components/Internationalization/ExampleClient";
@@ -20,7 +19,7 @@ export default async function Home({ params: { lng } }) {
     <>
       <Hero />
       <About />
-      <Achivements />
+      <Achievements />
       <Team />
       <Location />
       <YouTube />
