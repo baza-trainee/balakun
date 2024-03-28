@@ -17,7 +17,7 @@ export const Hero = () => {
     console.log('Go to Student registration');
   };
   return (
-    <section className="mt-16 mb-[66px] px-[210px] pb-16 flex flex-row items-center gap-16">
+    <section className="pt-16 mb-[66px] px-[210px] pb-16 flex flex-row items-center gap-16">
       <div>
         <h1 className={`${ptsans.className} text-5xl mb-3 text-[#000000]`}>
           {t('hero.title-part-1')}
