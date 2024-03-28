@@ -1,8 +1,8 @@
 {
   "footer": {
-    "nav-about-us": "About Us",
     "nav-students": "For Students",
     "nav-mentors": "For Mentors",
+    "nav-dashbourd": "Dashboard",
     "sign-up-text": "Sign up to our newsletter",
     "sign-up": "Sign Up",
     "email-error": "Email is invalid",

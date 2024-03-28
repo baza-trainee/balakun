@@ -1,8 +1,8 @@
 {
   "footer": {
-    "nav-about-us": "Про нас",
     "nav-students": "Студентам",
     "nav-mentors": "Викладачам",
+    "nav-dashbourd": "Інформація",
     "sign-up-text": "Підпишіться на нашу розсилку",
     "sign-up": "Підписатися",
     "email-error": "Електронна адреса недійсна",

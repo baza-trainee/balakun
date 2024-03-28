@@ -31,7 +31,7 @@ export default async function RootLayout({ children, params: { lng } }) {
       <body className={roboto.className}>
         <TranslationsProvider namespaces={i18nNamespaces} locale={lng} resources={resources}>
           <Header lng={lng} />
-          <main className="mx-auto max-w-[1920px]">{children}</main>
+          <main className="mx-auto mt-[92px] max-w-[1920px]">{children}</main>
           <Footer lng={lng} />
         </TranslationsProvider>
       </body>
