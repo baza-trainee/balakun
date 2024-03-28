@@ -17,10 +17,10 @@ export const HeroPart = () => {
   return (
     <section className="mt-16 mb-[66px] px-[210px] pb-16 flex flex-row items-center gap-16">
       <div>
-        <h1 className={`${ptsans.className} text-5xl mb-3 text-[#000000]`}>
-          Join <span className="text-[#E61E0A]">Balakun</span> and start talking
+        <h1 className={`${ptsans.className} text-5xl mb-3 text-black-1000`}>
+          Join <span className="text-red-900">Balakun</span> and start talking
         </h1>
-        <p className="text-base mb-12 leading-[1.4] text-[#4F4F4F]">
+        <p className="text-base mb-12 leading-[1.4] text-black-700">
           The first step to joining Balakun is to sign up, become a verified students and then create your profile. Once
           you have created your profile you will be able to connect with a fluent English speaking mentor, join group
           lessons and speaking clubs and start working on your English skills
