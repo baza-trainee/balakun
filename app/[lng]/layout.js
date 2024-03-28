@@ -22,7 +22,7 @@ export function generateStaticParams() {
 
 import initTranslations from '../i18n';
 import TranslationsProvider from '@/components/Internationalization/TranslationsProvider';
-const i18nNamespaces = ['translation', 'header', 'footer'];
+const i18nNamespaces = ['translation', 'header', 'footer', 'hero'];
 
 export default async function RootLayout({ children, params: { lng } }) {
   const { t, resources } = await initTranslations(lng, i18nNamespaces);
